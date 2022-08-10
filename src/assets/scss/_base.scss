@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Inter-Regular";
+  src: url('./assets/font/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url('./assets/font/Inter-Bold.ttf');
+}
+
+$font-normal: "Inter-Regular";
+$font-titulo: "Inter-Bold";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-normal;
+
+  ul {
+    list-style: none;
+
+    li {
+      color: #f9f9f9;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #f9f9f9;
+  }
+}
+
+h1 {
+  font-family: $font-titulo;
+  text-transform: uppercase;
+  line-height: 110%;
+}

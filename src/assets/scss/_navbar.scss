@@ -1,0 +1,29 @@
+header {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+    ul {
+      display: flex;
+      gap: 30px;
+    }
+
+    .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+}
