@@ -1,14 +1,16 @@
 <template>
-  <div>
-    <div>
+  <div class="card">
+    <div class="card-img">
       <img :src="img">
     </div>
-    <div>
-      <div>
-        <span>EQUIPE PRINCIPAL</span>
-        <span>DATA</span>
+    <div class="card-info">
+      <div class="card-marcador flex">
+        <span>{{ marcador }}</span>
+        <span>{{ data }}</span>
       </div>
-      <h3> {{titulo}} </h3>
+      <div class="card-link">
+        <a href="#"> {{ titulo }} </a>
+      </div>
     </div>
   </div>
 </template>
@@ -17,8 +19,10 @@
 export default {
   name: 'CardNoticiaComp',
   props: {
-    img: Image,
-    titulo: String
+    img: String,
+    titulo: String,
+    marcador: String,
+    data: String
   }
 }
 </script>

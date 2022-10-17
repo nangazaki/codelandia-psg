@@ -1,21 +1,30 @@
 <template>
-  <header>
+  <header class="flex">
     <a href="/">
       <img src="../assets/img/psg.svg">
     </a>
-    <nav>
-      <ul>
+    <nav class="flex">
+      <ul class="flex">
         <li v-for="(item, chave) in navlist" :key="chave">
           <a :href="item.link">
             {{ item.name }}
           </a>
         </li>
       </ul>
-      <div class="btn-group">
+      <div class="btn-group flex">
         <a href="#">ENTRAR</a>
         <ButtonComp href="#" name="REGISTRE-SE"/>
       </div>
     </nav>
+    <div class="mobile-menu">
+      <span>Menu</span>
+      <span class="lines flex">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </span>
+    </div>
   </header>
 </template>
 
@@ -30,11 +39,11 @@ export default {
   data(){
     return{
       navlist: [
-        {link: '/', name: 'Inicio', active: true},
-        {link: '#', name: 'Resultados', active: false},
-        {link: '#', name: 'Notícias', active: false},
-        {link: '#', name: 'Clubes', active: false},
-        {link: '#', name: 'Lojas', active: false},
+        {link: '/', name: 'Inicio'},
+        {link: '#', name: 'Resultados'},
+        {link: '#', name: 'Notícias'},
+        {link: '#', name: 'Clubes'},
+        {link: '#', name: 'Lojas'}
       ]
     }
   }
